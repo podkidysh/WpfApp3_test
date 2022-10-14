@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp3.MainWindow" Icon="Image/captch1.png"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="450" Width="800"
+        MinHeight="225" MinWidth="400">
+    <Grid>
+        <StackPanel >
+            <Label>Imya</Label>
+            <TextBox Name="tbNameN"></TextBox>
+            <StackPanel Name="spCap" Visibility="Collapsed">
+                <Image Name="imageCap" Width="200" Height="100"></Image>
+                <Label>Введите имя</Label>
+                <TextBox Name="tbName"></TextBox>
+                <Button Name="btnRefrash" Click="btnRefrash_Click">обновить</Button>
+            </StackPanel>
+            <Button Name="btnGo" Click="btnGo_Click">Войти</Button>
+        </StackPanel>
+    </Grid>
+</Window>
